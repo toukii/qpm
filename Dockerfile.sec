@@ -1,6 +1,6 @@
 FROM busybox
 
-ADD /gopath/bin/* /usr/bin/.
+RUN cp /gopath/bin/* /usr/bin/.
 ## ADD /gopath/bin/qpm /usr/bin/qpm
 
 EXPOSE 80
