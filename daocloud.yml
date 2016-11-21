@@ -1,0 +1,40 @@
+version: 2.0
+
+test:
+    image:
+        daocloud/ci-golang:1.7
+
+    services:
+        # redis
+
+    # using default docker-link env
+    env:
+        - GOPATH = "/gopath"
+
+    install:
+        - go install qpm.io/qpm
+
+    before_script:
+        git submodule init
+        git submodule update
+
+    script:
+        - qpm install package@1.0.1
+        - ifconfig
+        - uname -a
+
+build:
+    lite_image:
+        compile:
+            dockerfile_path: Dockerfile
+            build_dir: /
+            cache: false
+
+        extract:
+            - /go/bin/qpm
+            # - $GOPATH/src/github.com/toukii/wrdGM/*
+
+        package:
+              dockerfile_path: Dockerfile.sec
+              build_dir: /
+              cache: false

@@ -1,0 +1,7 @@
+FROM busybox
+
+ADD /gopath/bin/qpm /usr/bin/qpm
+
+EXPOSE 80
+
+CMD /usr/bin/qpm
