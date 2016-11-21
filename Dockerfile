@@ -4,7 +4,7 @@ ENV GOPATH /gopath
 
 WORKDIR /gopath
 
-RUN go install qpm.io/qpm
+RUN go get -u qpm.io/qpm
 
 EXPOSE 80:80
 

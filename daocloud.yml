@@ -12,7 +12,7 @@ test:
         - GOPATH = "/gopath"
 
     install:
-        - go install qpm.io/qpm
+        - go get -u qpm.io/qpm
 
     before_script:
         # - git submodule init
