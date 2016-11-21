@@ -1,4 +1,4 @@
-FROM daocloud/ci-golang:1.7
+FROM golang:latest
 
 ENV GOPATH /gopath
 
