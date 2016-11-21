@@ -1,7 +1,8 @@
 FROM busybox
 
-ADD /gopath/bin/qpm /usr/bin/qpm
+ADD /gopath/bin/* /usr/bin/.
+## ADD /gopath/bin/qpm /usr/bin/qpm
 
 EXPOSE 80
 
-CMD /usr/bin/qpm
+CMD /usr/bin/ls
