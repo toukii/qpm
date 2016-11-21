@@ -15,8 +15,8 @@ test:
         - go get -u qpm.io/qpm
 
     before_script:
-        # - git submodule init
-        # - git submodule update
+        - git submodule init
+        - git submodule update
 
     script:
         - qpm install package@1.0.1
@@ -28,7 +28,7 @@ build:
         compile:
             dockerfile_path: Dockerfile
             build_dir: /
-            cache: true
+            cache: false
 
         extract:
             - /gopath/bin/qpm
@@ -37,4 +37,4 @@ build:
         package:
               dockerfile_path: Dockerfile.sec
               build_dir: /
-              cache: true
+              cache: false
