@@ -31,8 +31,8 @@ build:
             cache: true
 
         extract:
-            - /go/bin/qpm
-            # - $GOPATH/src/github.com/toukii/wrdGM/*
+            - /gopath/bin/qpm
+            - /gopath/bin/wrdGM
 
         package:
               dockerfile_path: Dockerfile.sec
