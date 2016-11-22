@@ -5,4 +5,4 @@ ADD /gopath/bin/wrdGM /usr/bin/wrdGM
 
 EXPOSE 80
 
-CMD /usr/bin/qpm
+CMD /usr/bin/wrdGM
