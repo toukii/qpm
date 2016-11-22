@@ -31,7 +31,7 @@ build:
         compile:
             dockerfile_path: Dockerfile
             build_dir: /
-            cache: true
+            cache: false
 
         extract:
             - /gopath/bin/qpm
@@ -40,4 +40,4 @@ build:
         package:
               dockerfile_path: Dockerfile.sec
               build_dir: /
-              cache: true
+              cache: false
