@@ -12,11 +12,11 @@ test:
         - GOPATH = "/gopath"
 
     install:
-        - go get -u qpm.io/qpm
+        - git clone https://github.com/Cutehacks/qpm.git && cd qpm && git submodule init && git submoodule update
 
     before_script:
-        - git submodule init
-        - git submodule update
+        # - git submodule init
+        # - git submodule update
 
     script:
         - qpm install package@1.0.1
