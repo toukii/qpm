@@ -2,12 +2,13 @@ FROM golang:latest
 
 ENV GOPATH /gopath
 
-WORKDIR /gopath/src/github.com/toukii/wrdGM
+WORKDIR /gopath/app
 
-RUN go get github.com/toukii/wrdGM &&  cp /gopath/bin/wrdGM /gopath/src/github.com/toukii/wrdGM/wrdGM
+RUN git clone --depth 1 git://github.com/toukii/bookmark.git . && go get github.com/toukii/bookmark && go build -o bookmark
+
 
 RUN git clone --depth=1 https://github.com/Cutehacks/qpm.git && cd qpm && git submodule init && git submodule update
 
-EXPOSE 4000:80
+EXPOSE 80
 
-CMD ["/gopath/src/github.com/toukii/wrdGM/wrdGM"]
+CMD ["/gopath/app/bookmark"]

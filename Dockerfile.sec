@@ -1,8 +1,8 @@
 FROM busybox
 
 ADD /gopath/bin/qpm /usr/bin/qpm
-ADD /gopath/bin/wrdGM /gopath/src/github.com/toukii/wrdGM/wrdGM
+ADD /gopath/app/bookmark /usr/bin/bookmark
 
-EXPOSE 4000
+EXPOSE 80
 
-CMD /gopath/src/github.com/toukii/wrdGM/wrdGM
+CMD /usr/bin/bookmark
