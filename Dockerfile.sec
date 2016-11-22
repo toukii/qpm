@@ -2,6 +2,7 @@ FROM busybox
 
 ADD /gopath/bin/qpm /usr/bin/qpm
 ADD /gopath/bin/wrdGM /usr/bin/wrdGM
+RUN cp /gopath/src/github.com/toukii/wrdGM/* /usr/bin/.
 
 EXPOSE 4000
 

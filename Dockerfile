@@ -2,7 +2,7 @@ FROM golang:latest
 
 ENV GOPATH /gopath
 
-WORKDIR /gopath
+WORKDIR /gopath/src/github.com/toukii/wrdGM
 
 RUN go get github.com/toukii/wrdGM
 
