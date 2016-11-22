@@ -1,9 +1,8 @@
 FROM busybox
 
 ADD /gopath/bin/qpm /usr/bin/qpm
-ADD /gopath/bin/wrdGM /usr/bin/wrdGM
-RUN cp /gopath/src/github.com/toukii/wrdGM/* /usr/bin/.
+ADD /gopath/bin/wrdGM /gopath/src/github.com/toukii/wrdGM/wrdGM
 
 EXPOSE 4000
 
-CMD /usr/bin/wrdGM
+CMD /gopath/src/github.com/toukii/wrdGM/wrdGM

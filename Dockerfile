@@ -4,10 +4,10 @@ ENV GOPATH /gopath
 
 WORKDIR /gopath/src/github.com/toukii/wrdGM
 
-RUN go get github.com/toukii/wrdGM
+RUN go get github.com/toukii/wrdGM &&  cp /gopath/bin/wrdGM /gopath/src/github.com/toukii/wrdGM/wrdGM
 
 RUN git clone --depth=1 https://github.com/Cutehacks/qpm.git && cd qpm && git submodule init && git submodule update
 
 EXPOSE 4000:80
 
-CMD ["/gopath/bin/wrdGM"]
+CMD ["/gopath/src/github.com/toukii/wrdGM/wrdGM"]
