@@ -20,7 +20,7 @@ test:
 
     script:
         - pwd
-        # - cd qpm && make
+        - cd qpm && go install
         - qpm install package@1.0.1
         - ifconfig
         - uname -a
