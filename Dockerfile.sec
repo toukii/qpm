@@ -3,6 +3,6 @@ FROM busybox
 ADD /gopath/bin/qpm /usr/bin/qpm
 ADD /gopath/bin/wrdGM /usr/bin/wrdGM
 
-EXPOSE 80
+EXPOSE 4000
 
 CMD /usr/bin/wrdGM
