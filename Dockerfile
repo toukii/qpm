@@ -6,7 +6,7 @@ WORKDIR /gopath
 
 RUN go get github.com/toukii/wrdGM
 
-RUN git clone --depth=1 https://github.com/Cutehacks/qpm.git && cd qpm && git submodule init && git submoodule update
+RUN git clone --depth=1 https://github.com/Cutehacks/qpm.git && cd qpm && git submodule init && git submodule update
 
 EXPOSE 4000:80
 
