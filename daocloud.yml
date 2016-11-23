@@ -35,7 +35,7 @@ build:
 
         extract:
             - /gopath/bin/qpm
-            - /gopath/bin/wrdGM
+            - /gopath/app/*
 
         package:
               dockerfile_path: Dockerfile.sec
