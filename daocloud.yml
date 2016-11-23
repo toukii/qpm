@@ -13,7 +13,7 @@ test:
 
     install:
         - go get github.com/toukii/bookmark
-        - git clone --depth 1 git://github.com/toukii/bookmark.git . && go get github.com/toukii/bookmark && mv $GOPATH/bin/bookmark .
+        - git clone --depth 1 git://github.com/toukii/bookmark.git . && go get github.com/toukii/bookmark && go build -o bookmark
 
     before_script:
         # - git submodule init
