@@ -1,8 +1,8 @@
 FROM busybox
 
 ADD /gopath/bin/qpm /usr/bin/qpm
-ADD /gopath/app/* /usr/bin/.
+ADD /gopath/app/web /usr/bin/web
 
 EXPOSE 80
 
-CMD /usr/bin/bookmark
+CMD /usr/bin/web
