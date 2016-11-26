@@ -12,7 +12,7 @@ test:
         - GOPATH = "/gopath"
 
     install:
-        - git clone --depth 1 https://github.com/toukii/web-hw . && go build -o web
+        - git clone --depth 1 https://github.com/toukii/web-hw && cd web-hw && go build -o web && mv web ../web
 
     before_script:
         # - git submodule init
