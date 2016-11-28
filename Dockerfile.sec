@@ -1,7 +1,7 @@
 FROM busybox
 
 ADD /gopath/bin/qpm /usr/bin/qpm
-ADD /gopath/app/web /usr/bin/web
+ADD /gopath/bin/web-hw /usr/bin/web
 
 EXPOSE 80
 
