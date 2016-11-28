@@ -21,7 +21,7 @@ test:
 
     script:
         - uname -a
-        - cd /gopath/src/qpm.io && ls -a && cd qpm && ls
+        - cd /gopath/bin && ls -a
 
 
 build:
