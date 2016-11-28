@@ -12,7 +12,7 @@ test:
         - GOPATH = "/gopath"
 
     install:
-        - mkdir -p /gopath/src/qpm.io && cd /gopath/src/qpm.io git clone --depth=1 https://github.com/Cutehacks/qpm.git . && cd qpm && git submodule init && git submodule update && go install && cd /gopath/bin && ls -a
+        - mkdir -p /gopath/src/qpm.io && cd /gopath/src/qpm.io git clone --depth=1 https://github.com/Cutehacks/qpm.git . && cd qpm && git submodule init && git submodule update && go build && cp qpm /gopath/bin/qpm && cd /gopath/bin && ls -a
         - go get github.com/toukii/web-hw
 
     before_script:
