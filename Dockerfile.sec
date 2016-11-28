@@ -1,9 +1,9 @@
 FROM busybox
 
 #RUN cd /gopath/bin && ls -a
-ADD /gopath/bin/web-hw $HOME/web
+ADD /gopath/bin/web-hw $HOME/web-hw
 #ADD /gopath/bin/qpm $HOME/qpm
 
 EXPOSE 80
 
-CMD $HOME/web
+CMD $HOME/web-hw
