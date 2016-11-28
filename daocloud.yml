@@ -20,10 +20,9 @@ test:
         # - git submodule update
 
     script:
-        - ifconfig
         - uname -a
         - cd /gopath/src/qpm.io && ls -a && cd qpm && ls
-        
+
 
 build:
     lite_image:
