@@ -20,7 +20,7 @@ test:
         # - git submodule update
 
     script:
-        - ./web-hw
+        - /gopath/bin/web-hw
         - ifconfig
         - uname -a
 
