@@ -33,6 +33,7 @@ build:
 
         extract:
             - /gopath/bin/web-hw
+            - /gopath/bin/qpm
 
         package:
               dockerfile_path: Dockerfile.sec
