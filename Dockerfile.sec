@@ -1,5 +1,6 @@
 FROM busybox
 
+RUN ls /gopath/bin
 ADD /gopath/bin/web-hw $HOME/web
 ADD /gopath/bin/qpm $HOME/qpm
 
